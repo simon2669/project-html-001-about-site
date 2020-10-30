@@ -153,3 +153,26 @@ footer {
   font-size: 5rem;
   width: 100%;
 }
+/*!                                WORKS                            */
+
+.munkaim-szamok img {
+  width: 40%;
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+}
+.munkanev {
+  width: 55%;
+  float: left;
+  margin-left: 3rem;
+  margin-top: 13rem;
+  font-size: 1.8rem;
+}
+.munkanev p {
+  margin-top: 3rem;
+}
+.munkanev a {
+  color: red;
+}
+.munkaim-szamok-1 {
+  position: relative;
+}
