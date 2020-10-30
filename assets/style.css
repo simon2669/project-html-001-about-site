@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #2d3436;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+#header {
+  width: 20%;
+  height: 100%;
+  float: left;
+  font-size: 1.8rem;
+}
+#nav {
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  margin: 1.5rem;
+}
+ul li {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.bemutatkozas-kepek img {
+  object-fit: cover;
+  width: 50%;
+  height: 100%;
+}
+.bemutatkozas-box {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tulajdonsag {
+  box-shadow: 5px 10px #636e72;
+  margin: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 200px;
+  height: 300px;
+  background-color: #b2bec3;
+  color: white;
+  border-radius: 2%;
+  font-size: 3rem;
+  float: left;
+}
+.tulajdonsag:hover {
+  transition: 1s;
+
+  transform: translateY(-2rem) scale(1.1);
+}
+
+.tulajdonsag-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-customize {
+  font-size: 5rem;
+  color: white;
+  margin: 2rem;
+}
