@@ -156,12 +156,12 @@ footer {
 /*!                                WORKS                            */
 
 .munkaim-szamok img {
-  width: 40%;
-  margin-bottom: 5rem;
-  margin-top: 10rem;
+  width: 35%;
+  float: left;
+  margin: 5rem;
 }
 .munkanev {
-  width: 55%;
+  width: 50%;
   float: left;
   margin-left: 3rem;
   margin-top: 13rem;
@@ -175,4 +175,50 @@ footer {
 }
 .munkaim-szamok-1 {
   position: relative;
+}
+.kepek {
+  position: relative;
+}
+.kepek img {
+  box-shadow: 3px 3px rgb(59, 57, 57);
+  margin: 3rem;
+  width: 25%;
+  float: left;
+}
+.bemutatkozas {
+  position: relative;
+}
+.kepszoveg {
+  float: left;
+}
+.kepszoveg img {
+  width: 40%;
+}
+.kepszoveg header {
+  margin: 5rem;
+  font-size: 1.8rem;
+  float: left;
+  width: 40%;
+}
+.kepszoveg h2 {
+  margin-bottom: 3rem;
+}
+
+.e {
+  display: block;
+  margin: 3rem;
+  padding: 3rem;
+  list-style: square;
+  float: left;
+  text-align: left;
+}
+.e ul,
+.e ol {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.e ul li {
+  margin: 1rem;
+  padding: 1rem;
 }
