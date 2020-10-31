@@ -34,21 +34,35 @@ body {
   float: left;
 }
 
-ul {
+#nav ul {
   list-style: none;
   display: inline-flex;
   margin: 1.5rem;
 }
-ul li {
+#nav ul li {
   padding-left: 6rem;
   padding-right: 6rem;
 }
-ul a {
+#nav ul li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 500;
+}
+@media (max-width: 500px) {
+  #header {
+    float: none;
+  }
+  #nav ul {
+    margin: 1rem;
+  }
+  #nav ul li {
+    padding: 2rem;
+  }
+  #nav ul li a {
+    font-size: 2rem;
+  }
 }
 .bemutatkozas-szoveg {
   background: url("/images/charles-deluvio-pjAH2Ax4uWk-unsplash.jpg");
@@ -75,6 +89,17 @@ ul a {
   left: 60%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 500px) {
+  .egy {
+    font-size: 1.8rem;
+  }
+  .ketto {
+    text-align: justify;
+    font-size: 1.8em;
+    width: 36rem;
+    left: 48%;
+  }
+}
 
 .bemutatkozas-box {
   width: 80%;
@@ -86,18 +111,25 @@ ul a {
 }
 .tulajdonsag {
   box-shadow: 5px 10px rgb(206, 206, 206);
-  margin: 4rem;
+  margin: 2rem;
+  margin-bottom: 10rem;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   font-weight: 600;
   text-transform: uppercase;
-  width: 200px;
-  height: 300px;
+  width: 26%;
+  height: 90%;
   background-color: white;
   color: black;
   border-radius: 2%;
   font-size: 3rem;
   float: left;
+}
+@media (max-width: 500px) {
+  .tulajdonsag {
+    width: 100%;
+    height: 80%;
+  }
 }
 .tulajdonsag:hover {
   transition: 1s;
@@ -153,8 +185,16 @@ footer {
   font-size: 5rem;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .kaland {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
 /*!                                WORKS                            */
-
+.erossegeim {
+  height: 80vh;
+}
 .munkaim-szamok img {
   width: 35%;
   float: left;
@@ -176,6 +216,10 @@ footer {
 .munkaim-szamok-1 {
   position: relative;
 }
+.dijnyertes {
+  margin: 4rem;
+  font-size: 3rem;
+}
 .kepek {
   position: relative;
 }
@@ -184,6 +228,11 @@ footer {
   margin: 3rem;
   width: 25%;
   float: left;
+}
+@media (max-width: 500px) {
+  .kepek img {
+    width: 80%;
+  }
 }
 .bemutatkozas {
   position: relative;
@@ -203,22 +252,106 @@ footer {
 .kepszoveg h2 {
   margin-bottom: 3rem;
 }
-
-.e {
-  display: block;
-  margin: 3rem;
-  padding: 3rem;
-  list-style: square;
+@media (max-width: 500px) {
+  .kepszoveg img {
+    width: 100%;
+    float: none;
+  }
+  .kepszoveg header {
+    margin: 5rem;
+    font-size: 2rem;
+    float: none;
+    width: 80%;
+  }
+}
+.eros-fels {
+  position: relative;
+}
+.erossegfelsorolas {
   float: left;
-  text-align: left;
+  width: 50%;
+  padding: 5rem;
 }
-.e ul,
-.e ol {
-  padding: 1rem;
-  margin: 1rem;
+.ero {
+  font-size: 2.8rem;
+  margin: 4rem;
+}
+.erossegfelsorolas h3 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.e {
+  font-size: 1.9rem;
+  margin-left: 3rem;
+}
+.e li {
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .erossegfelsorolas {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .munkaim-szamok-1 img {
+    width: 80%;
+  }
+  .munkanev {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    font-size: 2.3rem;
+    width: 80%;
+  }
 }
 
-.e ul li {
-  margin: 1rem;
-  padding: 1rem;
+.form-szoveg {
+  font-size: 3rem;
+  text-align: center;
+}
+.formm {
+  margin-left: 25rem;
+  font-size: 2rem;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .formm {
+    margin-left: 5rem;
+  }
+}
+#nev,
+#email,
+#uzenet {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+button {
+  color: black;
+  background-color: white;
+  padding: 2rem;
+  margin-left: 15rem;
+  border-radius: 20%;
+  font-weight: 900;
+  width: 20%;
+}
+input,
+textarea {
+  padding: 1.5rem;
+  font-size: 2rem;
+  width: 55%;
+}
+input,
+textarea {
+  display: block;
+}
+@media (max-width: 500px) {
+  input,
+  textarea {
+    width: 90%;
+  }
+  button {
+    width: 50%;
+    margin-left: 20%;
+  }
 }
