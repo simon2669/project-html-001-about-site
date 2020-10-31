@@ -79,13 +79,13 @@
       <h4 class="form-szoveg">Az alábbi formmal kapcsolatba léphetsz velem:
       </h4>
       <section class="formm">
-        <form action="">
+        <form action="post" action="#">
           <label for="nev">Teljes név:</label>
-          <input type="text" id="nev" minlength="5">
+          <input type="text" id="nev" minlength="5" required>
           <label for="email">Email cím:</label>
-          <input type="email" id="email">
+          <input type="email" id="email" required>
           <label for="uzenet">Üzenet:</label>
-          <textarea id="uzenet" name="uzenet" rows="4" cols="50" minlength="20">
+          <textarea id="uzenet" name="uzenet" rows="4" cols="50" minlength="20" required>
           </textarea>
           <button type="submit">Elküldés</button>
 
@@ -118,6 +118,7 @@
       </ul>
     </nav>
   </footer>
+  <script src="/index.js"></script>
 </body>
 
 </html>
